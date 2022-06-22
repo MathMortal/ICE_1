@@ -15,6 +15,10 @@ import static java.time.Clock.system;
  * @author sivagamasrinivasan
  * 
  */
+enum A1{
+    
+}
+
 public class Arithmetic 
 {
 
@@ -26,6 +30,7 @@ public class Arithmetic
        
         ArithmeticBase r= new ArithmeticBase();
         Scanner in= new Scanner(System.in);
+        System.out.println("enter the formula");
         int n= in.nextInt();
         int m= in.nextInt();
         double result = r.calculate(m,n);

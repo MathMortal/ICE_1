@@ -13,14 +13,18 @@ import java.util.Scanner;
  * @author sivagamasrinivasan
  * 
  */
-public class ArithmeticBase 
+enum AT{
+    PLUS,MINUS,TIMES,DIVIDE;
+}
+public class ArithmeticBase  
 {
  public double x,y;
-    double calculate(double x, double y) 
+    public double calculate(int x, int y) 
         {
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter arithmetic operation to Perform: ");
         String s= sc.next();
+        AT S1 = AT.valueOf(s);
         switch (s.toUpperCase()) 
         {
             case "PLUS":
